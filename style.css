@@ -1,0 +1,129 @@
+/*Grid Sections*/
+/*This defines the whole grid area */
+.container
+{
+	font: 15px arial, sans-serif;
+	display: grid;
+	grid-template-areas: 
+		"header header header"
+		"nav nav nav"
+		"main main main"
+		"footer footer footer";
+	grid-gap: .75em;
+	max-width: 1000px;
+	background-color: blueviolet;
+	margin: 0;
+}
+body
+{
+	overflow: auto;
+	max-height: 100%;
+}
+header
+{
+    grid-area: header;
+    background-color: white;
+	background: url("../images/logo.png") no-repeat;
+	background-size: 100%;
+	min-height: 180px;
+	max-height: 180px;
+	border-style: solid;
+	
+}
+nav
+{
+    grid-area: nav;
+	background-color: white;
+	text-align: center;
+	border-style: solid;
+	padding: 5px;
+}
+main
+{
+    grid-area: main;
+    background-color: White;
+	min-height: 750px;
+	min-width: auto;
+	text-align: center;
+	border-style: solid;
+}
+footer
+{
+    grid-area: footer;
+    background-color: white;
+	color: black;
+	text-align: center;
+	border-style: solid;
+	max-height: 25px;
+}
+h1, h2
+{
+	text-align:center;
+}
+label 
+{
+	display: inline-block;
+	margin: 5px 0;
+}
+form.centre
+{
+    margin-left:auto; 
+    margin-right:auto;
+	padding-bottom: 10px;
+	padding-top: 15px;
+}
+table 		
+{ 
+	font-weight: bold;
+	border-bottom:1px solid #ccc; 
+	
+}
+table.centre 
+{
+    margin-left:auto; 
+    margin-right:auto;
+	padding-bottom: 10px;
+}
+table th	
+{ 	
+	background:#eee; 
+	padding:5px;
+	border-top:1px solid #ccc; 
+}
+table td	
+{ 
+	color: black;	
+	padding:5px;
+	border-top:1px solid #ccc; 
+}
+table td.right	
+{ 
+	text-align: right;
+}
+ul 
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: inline-block;
+}  
+li
+{
+	float: left;
+	padding: 0px 5px;
+}
+li a 
+{
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-radius: 30%;
+	border-style: solid;
+}
+li a:hover 
+{
+	background-color: blueviolet;
+}
